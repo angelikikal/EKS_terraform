@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodeapp-deployment
+  labels:
+    app: nodeapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nodeapp
+  template:
+    metadata:
+      labels:
+        app: nodeapp 
+    spec:
+      containers:
+      - name: nodeserver
+        image: public.ecr.aws/y0f1p2w5/raw-lab/nodeapp:latest
+        ports:
+        - containerPort: 3000
+status: {}
