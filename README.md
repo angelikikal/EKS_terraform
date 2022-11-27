@@ -25,7 +25,6 @@
 
  Creates Kubernetes cluster nodes and similar to the EKS cluster, requires IAM role as well.
 
-
 ## Resources
 
 | Name | Type |
@@ -60,10 +59,3 @@
 ## Inputs
 
 No inputs.
-
-## Outputs
-
-| Name | Description |
-|------|-------------|
-| <a name="output_eks_cluster_autoscaler_arn"></a> [eks\_cluster\_autoscaler\_arn](#output\_eks\_cluster\_autoscaler\_arn) | n/a |
-<!-- END_TF_DOCS -->
